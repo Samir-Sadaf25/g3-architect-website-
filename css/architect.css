@@ -134,6 +134,65 @@ main>section {
   color: #727272;
 }
 
+/* some facts styles */
+.facts-content{
+   margin-left: 160px;
+   margin-bottom: 70px;
+}
+.facts-title {
+  font-size: 2.80rem;
+  font-weight: 700;
+  color: #131313;
+}
+
+.facts-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #727272;
+}
+
+.facts-card {
+  border: 1px solid rgba(255, 144, 14, 1);
+  /* padding: 45px 36px 59px 35px; */
+  width: 240px;
+  height: 240px;
+  margin-bottom: 180px;
+  border-radius: 8px;
+}
+
+.facts-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  /* justify-items: center; */
+}
+
+.facts-icon {
+  /* width: 45px; */
+  /* margin: 50px */
+  margin-top: 47px;
+  margin-left: 90px;
+}
+
+.facts-number {
+  font-size: 2.8rem;
+  margin-top: 10px;
+  /* margin-left: 89px; */
+   text-align: center;
+  font-weight: 600;
+  color: #424242;
+
+}
+.facts{
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #727272;
+  text-align: center;
+  margin-top: -35px;
+}
+
 /* Responsive Media Query */
 @media screen and (max-width:576px) {
   .navbar {
@@ -158,20 +217,54 @@ main>section {
     margin: 10px;
     margin-bottom: 20px;
   }
+  .facts-content{
+    margin-left: 0px;
+    /* margin-bottom: 70px; */
+ }
+ .facts-title{
+    margin-bottom: 0px;
+ }
+ .facts-card-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-left: 68px;
+  /* margin-right: 200px; */
 }
+.facts-card{
+  margin-bottom: 0px;
+}
+}
+
 /* for medium devices */
-@media screen and (min-width:576px) and (max-width:992px){
+@media screen and (min-width:576px) and (max-width:992px) {
   .team-img-container {
     /* grid-template-columns: repeat(1, 1fr); */
     gap: 5px;
     margin: auto 40px;
   }
+
   .team-section {
     flex-wrap: wrap;
     margin-bottom: 150px;
   }
+
   .team-contents {
-    margin-top:  20px;
-     padding-left: 35px;
+    margin-top: 20px;
+    padding-left: 35px;
   }
+  .facts-content{
+    margin-left: 30px;
+    /* margin-bottom: 70px; */
+ }
+ .facts-title{
+    margin-bottom: 7px;
+ }
+ .facts-card-container {
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 30px;
+  /* margin-right: 200px; */
+}
+.facts-card{
+  margin-bottom: 0px;
+}
 }
