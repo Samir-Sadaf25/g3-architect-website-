@@ -135,10 +135,11 @@ main>section {
 }
 
 /* some facts styles */
-.facts-content{
-   margin-left: 160px;
-   margin-bottom: 70px;
+.facts-content {
+  margin-left: 160px;
+  margin-bottom: 70px;
 }
+
 .facts-title {
   font-size: 2.80rem;
   font-weight: 700;
@@ -180,17 +181,44 @@ main>section {
   font-size: 2.8rem;
   margin-top: 10px;
   /* margin-left: 89px; */
-   text-align: center;
+  text-align: center;
   font-weight: 600;
   color: #424242;
 
 }
-.facts{
+
+.facts {
   font-size: 1.25rem;
   font-weight: 600;
   color: #727272;
   text-align: center;
   margin-top: -35px;
+}
+
+.sponsors-content {
+  text-align: center;
+}
+
+.sponsors-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #727272;
+
+}
+
+.sponsors-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #131313;
+}
+
+.sponsors-list {
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.sponsors-icon {
+  filter: grayscale(100);
 }
 
 /* Responsive Media Query */
@@ -217,22 +245,36 @@ main>section {
     margin: 10px;
     margin-bottom: 20px;
   }
-  .facts-content{
+
+  .facts-content {
     margin-left: 0px;
     /* margin-bottom: 70px; */
- }
- .facts-title{
+  }
+
+  .facts-title {
     margin-bottom: 0px;
- }
- .facts-card-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  margin-left: 68px;
-  /* margin-right: 200px; */
-}
-.facts-card{
-  margin-bottom: 0px;
-}
+  }
+
+  .facts-card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 68px;
+    /* margin-right: 200px; */
+  }
+
+  .facts-card {
+    margin-bottom: 0px;
+  }
+
+  .sponsors-list {
+    /* justify-content: space-around; */
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  .sponsors-icon{
+    /* border-image-width: 10%; */
+    width: 15%;
+  }
 }
 
 /* for medium devices */
@@ -252,19 +294,29 @@ main>section {
     margin-top: 20px;
     padding-left: 35px;
   }
-  .facts-content{
+
+  .facts-content {
     margin-left: 30px;
     /* margin-bottom: 70px; */
- }
- .facts-title{
+  }
+
+  .facts-title {
     margin-bottom: 7px;
- }
- .facts-card-container {
-  grid-template-columns: repeat(2, 1fr);
-  margin-left: 30px;
-  /* margin-right: 200px; */
-}
-.facts-card{
-  margin-bottom: 0px;
-}
+  }
+
+  .facts-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 30px;
+    /* margin-right: 200px; */
+  }
+
+  .facts-card {
+    margin-bottom: 0px;
+  }
+  .sponsors-section{
+    margin-bottom: 300px;
+  }
+  .sponsors-icon{
+    width: 15%;
+  }
 }
